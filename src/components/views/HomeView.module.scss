@@ -1,3 +1,7 @@
 .home_view_container {
-    
+    .content_section {
+        > div {
+            margin-top: 24px;
+        }
+    }
 }

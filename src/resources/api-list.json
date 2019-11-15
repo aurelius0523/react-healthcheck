@@ -1,0 +1,17 @@
+[
+    {
+        "name": "JSON placeholder healthcheck",
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "method": "POST",
+        "username": "",
+        "password": "",
+        "requestBody": "{\"wow\": \"1\"}"
+    },
+    {
+        "name": "JSON placeholder healthcheck 2",
+        "url": "https://jsonplaceholder.typicode.com/posts/1",
+        "method": "GET",
+        "username": "",
+        "password": ""
+    }
+]
