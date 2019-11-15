@@ -1,0 +1,17 @@
+@import "../../../styles/colors.module.scss";
+.api_card_container {
+    .add_section {
+        color: $green;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cardlet_section {
+        margin-top: 16px;
+        //cardlet-container (component)
+        > div {
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+    }
+}

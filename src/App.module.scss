@@ -1,0 +1,13 @@
+.app_container {
+    @import "./styles/colors.module.scss";
+
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $grey-800;
+    margin: auto;
+    > .content_section {
+        width: 80%;
+    }
+}

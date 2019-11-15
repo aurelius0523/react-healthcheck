@@ -1,0 +1,82 @@
+@import "../../../../styles/fonts.module.scss";
+@import "../../../../styles/colors.module.scss";
+
+.api_cardlet_container {
+    position: relative;
+
+    .hide_loader {
+        display: none;
+    }
+    .loading {
+        pointer-events: none;
+        filter: opacity(0.5);
+    }
+
+    .card_status {
+        border-left: 5px solid $green;
+
+        &.error {
+            border-left: 5px solid red;
+        }
+    }
+
+    
+
+    .progress_section {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        // circular progress
+        > div {
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            transform: translateY(-50%) translateX(-50%);
+            z-index: 1;
+            animation: none;
+        }
+    }
+
+    .content_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > .title_url_holder {
+            .title {
+                @extend .text_h4;
+            }
+            .url {
+                @extend .text_h5;
+            }
+        }
+
+        >.button_wrapper {
+            color: $green;
+        }
+    }
+
+    .response_section {
+        margin-top: 16px;
+
+        // expansion panel
+        > div {
+            border: 1px solid $grey-500;
+            box-shadow: none;
+        }
+
+        pre {
+            border: 1px solid $grey-300;
+            margin: 0;
+            width: 100%;
+            padding: 8px 16px;
+            background-color: $grey-100;
+            white-space: pre-wrap;
+        }
+    }
+}
